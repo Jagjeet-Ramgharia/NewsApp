@@ -1,0 +1,23 @@
+.card{
+    height: fit-content;
+    width: 300px;
+    background: white;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .2);
+    margin: 0 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+figure img {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.card .heading > p{
+    margin-top: 5px;
+    overflow: hidden;
+}

@@ -1,0 +1,31 @@
+.news{
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 2px 4px;
+    width: 60vw;
+    height: fit-content;
+    margin: 0 auto;
+    margin-bottom: 12px ;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, .2);
+}
+.news_content{
+    margin-left: 10px;
+}
+.news > button{
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 40px;
+    margin-left: auto;
+    cursor: pointer;
+    background-color: white;
+}
+
+.MuiAvatar-root{
+    height: 50px !important; 
+    width: 50px !important;
+    margin-left: 10px;
+}

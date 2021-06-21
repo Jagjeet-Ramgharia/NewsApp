@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React, { useEffect } from "react";
+import SideBar from "./SideBar";
+import NewsFeed from "./NewsFeed";
+import { useList } from "./Context";
+import "./App.css";
+const App = () => {
+  const { apiData, setApiData } = useList();
+  useEffect(() => {
+    const getApi = async (e) => {
+      try {
+        const response = await fetch("https://api.first.org/data/v1/news");
+        const data = await response.json();
+        // console.log(data)
+        // console.log(data.data[0]);
+        setApiData(data.data);
+        console.log(apiData);
+      } catch (err) {
+        console.log(err);
+      }
+    };
+    getApi();
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="app">
+        <SideBar />
+        <NewsFeed />
+      </div>
+    </>
   );
-}
+};
 
 export default App;
