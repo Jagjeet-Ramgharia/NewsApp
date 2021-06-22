@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import Avatar from "@material-ui/core/Avatar";
 import "./Feedback.css";
-import './SideBar.css'
+import './SideBar.css';
+import NewsFeed from "./NewsFeed";
 import { useList } from "./Context";
 import SideBar from "./SideBar";
 
@@ -24,6 +25,8 @@ const Feedback = () => {
   const hideFeedback = () =>{
     const main_div = document.querySelector(".main_div");
     const feedback_form = document.querySelector(".feedback_form");
+    const feed = document.querySelector('.news_feed')
+    feed.classList.remove('opacity')
     main_div.classList.remove("hide");
     feedback_form.classList.add("hide");
   }

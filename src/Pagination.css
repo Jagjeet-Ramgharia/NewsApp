@@ -1,0 +1,18 @@
+nav{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+nav .list{
+    margin: 10px;
+}
+nav .list a{
+ text-decoration: none;
+ padding: 10px;
+ font-weight: bolder;
+ background-color: whitesmoke;
+ border-radius: 50px;
+
+}

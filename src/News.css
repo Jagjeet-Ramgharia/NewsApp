@@ -6,12 +6,25 @@
     width: 60vw;
     height: fit-content;
     margin: 0 auto;
-    margin-bottom: 12px ;
+    margin-bottom: 50px;
     border-radius: 15px;
     box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, .2);
+    transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+    cursor: pointer;
+}
+.news:hover{
+    transform: scale(1.05, 1.05);
+    transition: all 0.4s ease-in-out;
 }
 .news_content{
     margin-left: 10px;
+}
+.news_content > h1{
+    font-size: 24px;
+    font-weight: bolder;
+}
+.news_content > h3{
+    font-size: 14px;
 }
 .news > button{
     border-radius: 50px;

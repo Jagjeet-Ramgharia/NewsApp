@@ -1,17 +1,26 @@
 .card{
-    height: fit-content;
+    height:400px;
     width: 300px;
     background: white;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .2);
-    margin: 0 20px;
+    margin: 50px 20px;
     padding: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border-radius: 10px;
+    transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+    cursor: pointer;
+    /* float: left; */
+    /* flex-wrap: wrap; */
+}
+.card:hover{
+    transform: scale(1.05, 1.05);
+    transition: all 0.4s ease-in-out;
 }
 figure img {
     height: 150px;
+    object-fit: contain;
     width: 100%;
     object-fit: cover;
     border-radius: 3px;
